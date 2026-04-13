@@ -39,6 +39,7 @@
   class="
     collection-card
     border-style
+    spacing-style
     {% if block_settings.placement == 'on_image' %}collection-card--image-bg{% endif %}
     {% if section.settings.layout_type == 'bento' %}collection-card--image-height-fixed{% endif %}
     {% if section.settings.layout_type == 'editorial' %}collection-card--flexible-aspect-ratio{% endif %}
@@ -50,6 +51,14 @@
   {% endif %}
   style="
     {% render 'border-override', settings: block_settings %}
+    {% if block_settings.padding_individual %}
+      {% render 'spacing-style', settings: block_settings %}
+    {% else %}
+      --padding-block-start: {{ block_settings.padding_all }}px;
+      --padding-block-end: {{ block_settings.padding_all }}px;
+      --padding-inline-start: {{ block_settings.padding_all }}px;
+      --padding-inline-end: {{ block_settings.padding_all }}px;
+    {% endif %}
     --horizontal-alignment: {{ block_settings.horizontal_alignment }};
     --vertical-alignment: {{ block_settings.vertical_alignment }};
     --background-overlay-color: {{ block_settings.overlay_color }};
