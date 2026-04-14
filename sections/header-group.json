@@ -30,9 +30,22 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "<a href=\"mailto:info@tunagear.co.uk\" title=\"Send us a direct email message\">info@tunagear.co.uk</a>",
+            "text": "Support & Sales: <a href=\"mailto:info@tunagear.co.uk\" title=\"Send us a direct email message\">info@tunagear.co.uk</a>",
             "link": "",
-            "font": "var(--font-accent--family)",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "announcement_TifRtm": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Support & Sales: <a href=\"tel:(+44)1803 900 097\" title=\"Call us directly\">(+44) 1803 900 097</a>",
+            "link": "",
+            "font": "var(--font-body--family)",
             "font_size": "0.875rem",
             "weight": "",
             "letter_spacing": "normal",
@@ -43,7 +56,8 @@
       },
       "block_order": [
         "announcement_RcrYQx",
-        "announcement_BxgCk9"
+        "announcement_BxgCk9",
+        "announcement_TifRtm"
       ],
       "name": "t:names.announcement_bar",
       "settings": {
