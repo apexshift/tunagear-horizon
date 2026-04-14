@@ -54,7 +54,10 @@
           "blocks": {}
         }
       },
-      "block_order": ["text_YLPk4p", "button_H9gpTf"],
+      "block_order": [
+        "text_YLPk4p",
+        "button_H9gpTf"
+      ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "video",
@@ -158,7 +161,9 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_Ewy8fE"]
+          "block_order": [
+            "text_Ewy8fE"
+          ]
         },
         "static-collection-card": {
           "type": "_collection-card",
@@ -226,13 +231,21 @@
               "blocks": {}
             }
           },
-          "block_order": ["collection_title_tffJWg"]
+          "block_order": [
+            "collection_title_tffJWg"
+          ]
         }
       },
-      "block_order": ["group_fVgmHB"],
+      "block_order": [
+        "group_fVgmHB"
+      ],
       "name": "Methods",
       "settings": {
-        "collection_list": ["trolling", "top-water", "live-baiting"],
+        "collection_list": [
+          "trolling",
+          "top-water",
+          "live-baiting"
+        ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 3,
@@ -321,7 +334,9 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_QQCGqC"]
+          "block_order": [
+            "text_QQCGqC"
+          ]
         },
         "static-collection-card": {
           "type": "_collection-card",
@@ -389,10 +404,14 @@
               "blocks": {}
             }
           },
-          "block_order": ["collection_title_Nr9J9m"]
+          "block_order": [
+            "collection_title_Nr9J9m"
+          ]
         }
       },
-      "block_order": ["group_eK9zMi"],
+      "block_order": [
+        "group_eK9zMi"
+      ],
       "name": "Collections",
       "settings": {
         "collection_list": [
@@ -421,7 +440,7 @@
         "section_width": "page-width",
         "gap": 12,
         "color_scheme": "scheme-1",
-        "padding-block-start": 40,
+        "padding-block-start": 72,
         "padding-block-end": 0
       }
     },
@@ -495,7 +514,9 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_AgqX6n"]
+          "block_order": [
+            "text_AgqX6n"
+          ]
         },
         "static-collection-card": {
           "type": "_collection-card",
@@ -563,10 +584,14 @@
               "blocks": {}
             }
           },
-          "block_order": ["collection_title_NDHYh8"]
+          "block_order": [
+            "collection_title_NDHYh8"
+          ]
         }
       },
-      "block_order": ["group_RhLG9j"],
+      "block_order": [
+        "group_RhLG9j"
+      ],
       "name": "Brands",
       "settings": {
         "collection_list": [
@@ -592,8 +617,8 @@
         "section_width": "page-width",
         "gap": 12,
         "color_scheme": "scheme-1",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 72,
+        "padding-block-end": 72
       }
     }
   },
