@@ -416,13 +416,13 @@
       "settings": {
         "collection_list": [
           "premium-tuna-spreader-bars",
-          "standard",
-          "splash-chains",
+          "standard-tuna-spreader-bars",
+          "splash-chains-for-tuna-fishing",
           "tuna-stinger-rigs",
           "bluefin-tuna-lures",
           "tuna-fishing-rods-reels",
-          "tuna-hooks",
           "tuna-fishing-line",
+          "tuna-fishing-hooks",
           "tuna-fishing-accessories",
           "tuna-fishing-clothing"
         ],
@@ -596,12 +596,12 @@
       "settings": {
         "collection_list": [
           "tuna-gear",
-          "howk-fishing-copy",
+          "bkk-hooks-for-tuna-fishing",
           "howk-tuna-fishing",
           "momoi-tuna-fishing-line",
-          "ronz-lures",
-          "shimano",
-          "wolfpack-tackle"
+          "ronz-tuna-fishing-lures",
+          "shimano-tuna-fishing-gear",
+          "wolfpack-tuna-fishing-tackle"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
