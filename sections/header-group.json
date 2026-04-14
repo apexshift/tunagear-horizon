@@ -30,11 +30,11 @@
         "announcement_RcrYQx": {
           "type": "_announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Free shipping on orders £100+ (<em>Mainland U.K. only</em>)",
             "link": "",
-            "font": "var(--font-accent--family)",
+            "font": "var(--font-body--family)",
             "font_size": "0.875rem",
-            "weight": "",
+            "weight": "400",
             "letter_spacing": "normal",
             "case": "none"
           },
