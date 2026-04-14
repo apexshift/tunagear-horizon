@@ -30,7 +30,7 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "info@tunagear.co.uk",
+            "text": "<a href=\"mailto:info@tunagear.co.uk\" title=\"Send us a direct email message\">info@tunagear.co.uk</a>",
             "link": "",
             "font": "var(--font-accent--family)",
             "font_size": "0.875rem",
