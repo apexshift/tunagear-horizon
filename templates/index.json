@@ -422,7 +422,7 @@
           "bluefin-tuna-lures",
           "tuna-fishing-rods-reels",
           "tuna-hooks",
-          "fishing-line",
+          "tuna-fishing-line",
           "tuna-fishing-accessories",
           "tuna-fishing-clothing"
         ],
@@ -595,7 +595,7 @@
       "name": "Brands",
       "settings": {
         "collection_list": [
-          "tuna-gear-1",
+          "tuna-gear",
           "howk-fishing-copy",
           "howk-tuna-fishing",
           "momoi-tuna-fishing-line",
