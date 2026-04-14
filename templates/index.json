@@ -12,11 +12,149 @@
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
+        "group_8QpydD": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_VhicK8": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>Tuna Tackle for Charter Skippers and Privateers who want to battle giant Bluefin Tuna</h1>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "image_y4NCgU": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/port-wave.webp",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_NNtWBG": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Save time setting up with our Bluefin Tuna Tackle, Equipment and Gear. It's 'Ready To Go' out of the bag. Developed and refined since '23 for the commercial and recreational fishery.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_RKhBAT": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Shop All Gear",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_VhicK8",
+            "image_y4NCgU",
+            "text_NNtWBG",
+            "button_RKhBAT"
+          ]
+        },
         "text_YLPk4p": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -37,26 +175,11 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
+        "group_8QpydD",
+        "text_YLPk4p"
       ],
       "name": "t:names.hero",
       "settings": {
