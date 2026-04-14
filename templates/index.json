@@ -242,9 +242,9 @@
       "name": "Methods",
       "settings": {
         "collection_list": [
-          "trolling-tuna-fishing",
+          "trolling-tuna-fishing-gear",
           "top-water-tuna-fishing",
-          "live-bait-tuna-fishing"
+          "live-bait-tuna-fishing-tackle"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
@@ -597,8 +597,8 @@
         "collection_list": [
           "tuna-gear-1",
           "howk-fishing-copy",
-          "howk-fishing",
-          "momoi",
+          "howk-tuna-fishing",
+          "momoi-tuna-fishing-line",
           "ronz-lures",
           "shimano",
           "wolfpack-tackle"
