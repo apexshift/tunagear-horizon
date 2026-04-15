@@ -322,34 +322,53 @@
       "content": "t:content.borders"
     },
     {
-      "type": "range",
-      "id": "border_width",
-      "label": "t:settings.border_width",
-      "min": 0,
-      "max": 10,
-      "step": 1,
-      "unit": "px",
-      "default": 0
-    },
-    {
       "type": "select",
       "id": "border_style",
       "label": "t:settings.border_style",
       "options": [
         { "value": "none", "label": "t:options.none" },
-        { "value": "solid", "label": "t:options.solid" },
-        { "value": "dashed", "label": "t:options.dashed" },
-        { "value": "dotted", "label": "t:options.dotted" }
+        { "value": "solid", "label": "t:options.solid" }
       ],
-      "default": "none",
-      "visible_if": "{{ block.settings.border_width > 0 }}"
+      "default": "none"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "t:settings.thickness",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.border_style == 'solid' }}"
     },
     {
       "type": "color",
       "id": "border_color",
       "label": "t:settings.border_color",
       "default": "#000000",
-      "visible_if": "{{ block.settings.border_width > 0 and block.settings.border_style != 'none' }}"
+      "visible_if": "{{ block.settings.border_style == 'solid' }}"
+    },
+    {
+      "type": "range",
+      "id": "border_opacity",
+      "label": "t:settings.opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100,
+      "visible_if": "{{ block.settings.border_style == 'solid' }}"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "t:settings.border_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 0
     }
   ],
   "presets": [

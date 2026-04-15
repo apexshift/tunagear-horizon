@@ -318,6 +318,13 @@
   {% endif %}
 
   :root { --gallery-media-border-radius: {{ block_settings.media_radius }}px; }
+
+  {% if block_settings.border_style == 'solid' %}
+    {% assign border_alpha = block_settings.border_opacity | divided_by: 100.0 %}
+    media-gallery {
+      --border-color: {{ block_settings.border_color | color_modify: 'alpha', border_alpha }};
+    }
+  {% endif %}
 {% endstyle %}
 
 {% if closest.product == blank %}
@@ -348,7 +355,7 @@
         media-gallery--extend
       {% endif %}
     "
-    style="{% render 'spacing-style', settings: block_settings %} --thumbnail-width: {{ block_settings.thumbnail_width }}px; --media-radius: {{ block_settings.media_radius }}px;{% if block_settings.icons_style contains 'large' %} --slideshow-icon-padding: 0px;{% endif %}--image-gap: {{ block_settings.image_gap }}px;{% unless block_settings.aspect_ratio == 'adapt' %} --gallery-aspect-ratio: {{ block_settings.aspect_ratio }};{% endunless %} --border-width: {{ block_settings.border_width }}px; --border-style: {{ block_settings.border_style | default: 'none' }}; --border-color: {{ block_settings.border_color | default: 'transparent' }};"
+    style="{% render 'spacing-style', settings: block_settings %} --thumbnail-width: {{ block_settings.thumbnail_width }}px; --media-radius: {{ block_settings.media_radius }}px;{% if block_settings.icons_style contains 'large' %} --slideshow-icon-padding: 0px;{% endif %}--image-gap: {{ block_settings.image_gap }}px;{% unless block_settings.aspect_ratio == 'adapt' %} --gallery-aspect-ratio: {{ block_settings.aspect_ratio }};{% endunless %} --border-width: {{ block_settings.border_width }}px; --border-style: {{ block_settings.border_style | default: 'none' }}; --border-radius: {{ block_settings.border_radius }}px;"
     data-presentation="{{ media_presentation }}"
     {{ block_shopify_attributes }}
   >
@@ -642,6 +649,7 @@
     border-width: var(--border-width, 0px);
     border-style: var(--border-style, none);
     border-color: var(--border-color, transparent);
+    border-radius: var(--border-radius, 0px);
   }
 
   .dialog-zoomed-gallery__dialog {
