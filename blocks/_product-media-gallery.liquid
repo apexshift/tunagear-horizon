@@ -274,6 +274,45 @@
       "label": "t:settings.hide_unselected_variant_media"
     },
     {
+      "type": "select",
+      "id": "media_border_style",
+      "label": "t:settings.border_style",
+      "options": [
+        { "value": "none", "label": "t:options.none" },
+        { "value": "solid", "label": "t:options.solid" }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "range",
+      "id": "media_border_width",
+      "label": "t:settings.thickness",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.media_border_style == 'solid' }}"
+    },
+    {
+      "type": "color",
+      "id": "media_border_color",
+      "label": "t:settings.border_color",
+      "default": "#000000",
+      "visible_if": "{{ block.settings.media_border_style == 'solid' }}"
+    },
+    {
+      "type": "range",
+      "id": "media_border_opacity",
+      "label": "t:settings.opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100,
+      "visible_if": "{{ block.settings.media_border_style == 'solid' }}"
+    },
+    {
       "type": "header",
       "content": "t:content.padding"
     },
@@ -363,59 +402,6 @@
     {
       "type": "range",
       "id": "border_radius",
-      "label": "t:settings.border_radius",
-      "min": 0,
-      "max": 50,
-      "step": 1,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "header",
-      "content": "t:content.media_border"
-    },
-    {
-      "type": "select",
-      "id": "media_border_style",
-      "label": "t:settings.border_style",
-      "options": [
-        { "value": "none", "label": "t:options.none" },
-        { "value": "solid", "label": "t:options.solid" }
-      ],
-      "default": "none"
-    },
-    {
-      "type": "range",
-      "id": "media_border_width",
-      "label": "t:settings.thickness",
-      "min": 0,
-      "max": 10,
-      "step": 1,
-      "unit": "px",
-      "default": 0,
-      "visible_if": "{{ block.settings.media_border_style == 'solid' }}"
-    },
-    {
-      "type": "color",
-      "id": "media_border_color",
-      "label": "t:settings.border_color",
-      "default": "#000000",
-      "visible_if": "{{ block.settings.media_border_style == 'solid' }}"
-    },
-    {
-      "type": "range",
-      "id": "media_border_opacity",
-      "label": "t:settings.opacity",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "default": 100,
-      "visible_if": "{{ block.settings.media_border_style == 'solid' }}"
-    },
-    {
-      "type": "range",
-      "id": "media_border_radius",
       "label": "t:settings.border_radius",
       "min": 0,
       "max": 50,
