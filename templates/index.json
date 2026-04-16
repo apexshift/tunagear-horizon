@@ -650,17 +650,43 @@
                 "padding-inline-end": 24
               },
               "blocks": {
+                "text_rhPcjV": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Reasons to choose your Tuna Fishing Gear from us.</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "2.5rem",
+                    "line_height": "tight",
+                    "letter_spacing": "tight",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground-heading)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
                 "text_aBBXqU": {
                   "type": "text",
                   "name": "Context",
                   "settings": {
-                    "text": "<h2>Reasons to choose your Tuna Fishing Gear from us.</h2><p>Offering tuna fishing tackle for big game fishing (Tuna) to the UK, including equipment, gear and merch.</p><ul><li>Tested through the '23 commercial season.</li><li>Refined through the '24 & '25 recreational season.</li><li>Robust balanced designs.</li><li>Reduced stress points.</li><li>Quick release stingers.</li><li>Spring loaded directional bird option.</li><li>Industry leading terminal components.</li><li>Out of the bag, instant setup.</li></ul>",
+                    "text": "<p>Offering tuna fishing tackle for big game fishing (Tuna) to the UK, including equipment, gear and merch.</p><ul><li>Tested through the '23 commercial season.</li><li>Refined through the '24 & '25 recreational season.</li><li>Robust balanced designs.</li><li>Reduced stress points.</li><li>Quick release stingers.</li><li>Spring loaded directional bird option.</li><li>Industry leading terminal components.</li><li>Out of the bag, instant setup.</li></ul>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font_size": "1.125rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -693,6 +719,7 @@
                 }
               },
               "block_order": [
+                "text_rhPcjV",
                 "text_aBBXqU",
                 "button_rVz3gr"
               ]
