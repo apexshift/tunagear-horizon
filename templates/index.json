@@ -491,7 +491,7 @@
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "h5",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -552,7 +552,7 @@
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 5,
-        "mobile_columns": "1",
+        "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 12,
         "bento_gap": 8,
@@ -564,7 +564,199 @@
         "gap": 12,
         "color_scheme": "scheme-1",
         "padding-block-start": 72,
-        "padding-block-end": 0
+        "padding-block-end": 36
+      }
+    },
+    "section_GKz49G": {
+      "type": "section",
+      "blocks": {
+        "group_CcLH6j": {
+          "type": "group",
+          "name": "Container",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 24,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_yrNQGb": {
+              "type": "group",
+              "name": "Content",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "inherit_color_scheme": false,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "solid",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 8,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "text_aBBXqU": {
+                  "type": "text",
+                  "name": "Context",
+                  "settings": {
+                    "text": "<h2>Reasons to choose your Tuna Fishing Gear from us.</h2><p>Offering tuna fishing tackle for big game fishing (Tuna) to the UK, including equipment, gear and merch.</p><ul><li>Tested through the '23 commercial season.</li><li>Refined through the '24 & '25 recreational season.</li><li>Robust balanced designs.</li><li>Reduced stress points.</li><li>Quick release stingers.</li><li>Spring loaded directional bird option.</li><li>Industry leading terminal components.</li><li>Out of the bag, instant setup.</li></ul>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "button_rVz3gr": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "Shop Spreader Bars",
+                    "link": "shopify://collections/tuna-spreader-bars",
+                    "open_in_new_tab": false,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_aBBXqU",
+                "button_rVz3gr"
+              ]
+            },
+            "video_xatYWg": {
+              "type": "video",
+              "name": "t:names.video",
+              "settings": {
+                "source": "url",
+                "video_url": "https://www.youtube.com/watch?v=B-rhrr9MN3M",
+                "video_autoplay": false,
+                "video_loop": false,
+                "alt": "How to Shoot and Retrieve Tuna Spreader Bars",
+                "custom_width": 50,
+                "custom_width_mobile": 100,
+                "aspect_ratio": "16/9",
+                "border": "solid",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 8,
+                "padding-block-start": 8,
+                "padding-block-end": 8,
+                "padding-inline-start": 8,
+                "padding-inline-end": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_yrNQGb",
+            "video_xatYWg"
+          ]
+        }
+      },
+      "block_order": [
+        "group_CcLH6j"
+      ],
+      "name": "Spreader Bar Demo",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 36,
+        "padding-block-end": 36
       }
     },
     "collection_list_VH4XF8": {
@@ -729,7 +921,7 @@
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 5,
-        "mobile_columns": "1",
+        "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 12,
         "bento_gap": 8,
@@ -740,7 +932,7 @@
         "section_width": "page-width",
         "gap": 12,
         "color_scheme": "scheme-1",
-        "padding-block-start": 72,
+        "padding-block-start": 36,
         "padding-block-end": 72
       }
     }
@@ -749,6 +941,7 @@
     "hero_jVaWmY",
     "collection_list_GTMCjd",
     "collection_list_yJqpqi",
+    "section_GKz49G",
     "collection_list_VH4XF8"
   ]
 }
