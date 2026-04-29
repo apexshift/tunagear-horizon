@@ -214,6 +214,14 @@
         "padding-block-end": 72
       }
     },
+    "section_new_arrivals_ezahwU": {
+      "type": "section-new-arrivals",
+      "name": "t:content.new_arrivals_presets.banner_1",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "new_arrivals_headline": "New Arrivals"
+      }
+    },
     "collection_list_GTMCjd": {
       "type": "collection-list",
       "blocks": {
@@ -966,6 +974,7 @@
   },
   "order": [
     "hero_jVaWmY",
+    "section_new_arrivals_ezahwU",
     "collection_list_GTMCjd",
     "collection_list_yJqpqi",
     "section_GKz49G",
