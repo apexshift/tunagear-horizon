@@ -1,0 +1,169 @@
+{% assign new_arrivals = collections['new-arrivals'] %}
+{% assign count = new_arrivals.products_count %}
+{% assign index = 0 %}
+
+{%- if count > 0 -%}
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div
+  class="section section--{{ section.settings.section_width }} spacing-style {% if section.settings.color_scheme != blank %}color-{{ section.settings.color_scheme }}{% endif %} new-arrivals"
+  style="{% render 'spacing-padding', settings: section.settings %}"
+>
+  <div class="apex-marquee" data-marquee="">
+    <ul class="apex-marquee__list" data-marquee-list="">
+      {% for index in (1..5) %}
+        <li class="apex-marquee__item">
+          <a class="apex-marquee__link" href="{{ new_arrivals.url }}">
+            <div class="apex-marquee__label">
+              <span class="apex-marquee__count">{{ count }}</span> {{ section.settings.new_arrivals_headline }}
+            </div>
+            <div class="apex-marquee__item-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 50 50" fill="currentColor">
+                <path d="M17.6777 32.3223C12.9893 27.6339 6.63041 25 0 25C6.63041 25 12.9893 22.3661 17.6777 17.6777C22.3661 12.9893 25 6.63041 25 0C25 6.63041 27.6339 12.9893 32.3223 17.6777C37.0107 22.3661 43.3696 25 50 25C43.3696 25 37.0107 27.6339 32.3223 32.3223C27.6339 37.0107 25 43.3696 25 50C25 43.3696 22.3661 37.0107 17.6777 32.3223Z"></path>
+              </svg>
+            </div>
+            <span class="apex-marquee__label">Shop Now</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <ul class="apex-marquee__list" data-marquee-list="" aria-hidden="true">
+      {% for index in (1..5) %}
+        <li class="apex-marquee__item">
+          <a class="apex-marquee__link" href="{{ new_arrivals.url }}">
+            <div class="apex-marquee__label">
+              <span class="apex-marquee__count">{{ count }}</span> {{ section.settings.new_arrivals_headline }}
+            </div>
+            <div class="apex-marquee__item-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 50 50" fill="currentColor">
+                <path d="M17.6777 32.3223C12.9893 27.6339 6.63041 25 0 25C6.63041 25 12.9893 22.3661 17.6777 17.6777C22.3661 12.9893 25 6.63041 25 0C25 6.63041 27.6339 12.9893 32.3223 17.6777C37.0107 22.3661 43.3696 25 50 25C43.3696 25 37.0107 27.6339 32.3223 32.3223C27.6339 37.0107 25 43.3696 25 50C25 43.3696 22.3661 37.0107 17.6777 32.3223Z"></path>
+              </svg>
+            </div>
+            <span class="apex-marquee__label">Shop Now</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{%- endif -%}
+
+{% stylesheet %}
+
+.apex-marquee {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right,hsl(0 0 0 / 0),hsl(0 0 0 / 1) 7%,hsl(0 0 0 / 1) 93%,hsl(0 0 0 / 0));
+}
+
+.apex-marquee__list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: none;
+  list-style-type: none;
+  user-select: none;
+  margin: unset;
+  padding: unset;
+  min-width: 100%;
+}
+
+.apex-marquee__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0;
+  gap: 1em;
+  padding: 1em;
+  padding-inline: unset;
+}
+
+.apex-marquee__count {
+  background-color: red;
+  color: white;
+  border-radius: 100vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .7em;
+  font-weight: 500;
+  width: 2em;
+  height: 2em;
+}
+
+.apex-marquee__item-svg {
+  width: 1em;
+}
+
+.apex-marquee__label {
+  display: flex;
+  align-items: center;
+  gap: .75em;
+}
+
+.apex-marquee__label,
+.apex-marquee__link {
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+
+.apex-marquee__link {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  margin-inline: 1em;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+[data-marquee-list] {
+  animation: marquee 30s linear infinite;
+}
+
+[data-marquee]:hover [data-marquee-list],
+[data-marquee]:focus [data-marquee-list],
+[data-marquee]:focus-within [data-marquee-list] {
+  animation-play-state: paused;
+}
+
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.new_arrivals",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:content.new_arrivals"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:settings.color_scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "new_arrivals_headline",
+      "label": "Headline",
+      "default": "New Arrivals",
+    },
+  ],
+  "presets": [
+    {
+      "name": "t:content.new_arrivals_presets.banner_1",
+      "category": "t:categories.apex"
+    }
+  ]
+}
+{% endschema %}

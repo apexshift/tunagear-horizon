@@ -9,6 +9,7 @@
  */
 {
   "categories": {
+    "apex": "Apex",
     "banners": "Banners",
     // Category for fundamental content blocks (text, images, buttons)
     "basic": "Basic",
@@ -92,6 +93,7 @@
     "media_1": "Media 1",
     "media_2": "Media 2",
     "media_border": "Media border",
+    "meta_data": "Meta data",
     "mobile_media": "Mobile media",
     "mobile_media_1": "Mobile media 1",
     "mobile_media_2": "Mobile media 2",
@@ -101,6 +103,10 @@
     "mobile_layout": "Mobile layout",
     "mobile_size": "Mobile size",
     "mobile_width": "Mobile width",
+    "new_arrivals": "New arrivals",
+    "new_arrivals_presets": {
+      "banner_1": "New arrivals banner 1"
+    },
     "padding": "Padding",
     "padding_desktop": "Desktop padding",
     "padding_individual": "Set each side individually",
@@ -226,6 +232,8 @@
     "grid_layout_on_mobile": "Grid layout is used for mobile",
     "hide_logo_on_home_page_help": "Logo will remain visible when sticky header is active",
     "hover_effects": "Applies to product and collection cards",
+    "kicker_text": "Short, attention-grabbing text that introduces or emphasizes the section content. Visible above the heading.",
+    "kicker_product_count": "Displays the number of products in the collection",
     "logo_font": "Applies only when a logo is not selected",
     "logo_height": "Only affects header logo",
     "manage_countries_regions": "[Manage countries/regions](/admin/settings/markets)",
@@ -352,6 +360,8 @@
     "menu": "Menu",
     "mobile_layout": "Mobile layout",
     "multicolumn": "Multicolumn",
+    "new_arrivals": "New arrivals",
+    "new_arrivals_banner": "New arrivals banner",
     "rich_text_section": "Rich text",
     "overlapping_blocks": "Overlapping blocks",
     "page": "Page",
@@ -714,6 +724,7 @@
     "start": "Start",
     "stopwatch": "Stopwatch",
     "subheading": "Subheading",
+    "subtext": "Subtext",
     "subtle_zoom": "Zoom",
     "swatches": "Swatches",
     // Third-level option in font/typography hierarchy
@@ -797,6 +808,7 @@
     "bottom_row": "Bottom row",
     "bottom_padding": "Bottom padding",
     "button": "Button",
+    "button_label": "Button label",
     "button_text_case": "Text case",
     "card_height": "Card height",
     "card_hover_effect": "Card hover effect",
@@ -873,6 +885,7 @@
     "extend_summary": "Extend to screen edge",
     "extra_large": "Extra large",
     "extra_small": "Extra small",
+    "eyebrow": "Eyebrow text",
     "favicon": "Favicon",
     "filter_style": "Filter style",
     "first_row_media_position": "First row media position",
@@ -1121,12 +1134,16 @@
     "text": "Text",
     // Text capitalization setting for typography (uppercase/lowercase)
     "text_case": "Case",
+    "text_color": "Text color",
     "text_hierarchy": "Text hierarchy",
     "text_label_case": "Text label case",
     "text_presets": "Text presets",
     // Pixel width setting for borders, dividers, or lines
     "thickness": "Thickness",
     "title": "Title",
+    "toggle_kicker": "Toggle kicker",
+    "kicker_text": "Kicker text",
+    "kicker_product_count": "Kicker product count",
     // Label for range input controlling top spacing/margin
     "top": "Top",
     "top_level_size": "Top level size",
