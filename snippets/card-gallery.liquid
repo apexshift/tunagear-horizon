@@ -61,6 +61,10 @@
       assign media_fit = block_settings.constrain_to_viewport
     endif
   endif
+
+  if block_settings.media_fit != blank
+    assign media_fit = block_settings.media_fit
+  endif
 %}
 
 <div
