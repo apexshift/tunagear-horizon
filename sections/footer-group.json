@@ -183,11 +183,11 @@
         "social_icons": {
           "type": "social-links",
           "settings": {
-            "facebook_url": "https://www.facebook.com",
-            "instagram_url": "https://www.instagram.com",
-            "youtube_url": "https://www.youtube.com",
-            "tiktok_url": "https://www.tiktok.com",
-            "twitter_url": "https://www.twitter.com",
+            "facebook_url": "https://www.facebook.com/tunagearltd/",
+            "instagram_url": "https://www.instagram.com/tunagear.co.uk/",
+            "youtube_url": "https://www.youtube.com/@TunaGear",
+            "tiktok_url": "https://www.tiktok.com/@tuna.gear",
+            "twitter_url": "",
             "threads_url": "",
             "linkedin_url": "",
             "bluesky_url": "",
