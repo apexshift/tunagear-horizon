@@ -1,6 +1,8 @@
 {% assign new_arrivals = collections['new-arrivals'] %}
 {% assign count = new_arrivals.products_count %}
 
+
+{%- unless request.path contains 'new-arrivals' -%}
 {%- if count > 0 -%}
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
@@ -45,6 +47,7 @@
   </div>
 </div>
 {%- endif -%}
+{%- endunless -%}
 
 {% stylesheet %}
 
