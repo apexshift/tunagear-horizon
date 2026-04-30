@@ -219,7 +219,7 @@
             },
             "text_kRrmgk": {
               "type": "text",
-              "name": "t:names.text",
+              "name": "Vendor",
               "settings": {
                 "text": "<p>{{ closest.product.vendor }}</p>",
                 "width": "100%",
