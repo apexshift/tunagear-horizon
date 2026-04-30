@@ -7,8 +7,16 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
+    "section_new_arrivals_TYrUtW": {
+      "type": "section-new-arrivals",
+      "name": "t:content.new_arrivals_presets.banner_1",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "new_arrivals_headline": "New Arrivals"
+      }
+    },
     "main": {
       "type": "main-blog",
       "blocks": {
@@ -45,6 +53,18 @@
             "alignment": "left"
           },
           "blocks": {
+            "image": {
+              "type": "_blog-post-image",
+              "static": true,
+              "settings": {
+                "height": "large",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 4
+              },
+              "blocks": {}
+            },
             "heading": {
               "type": "_heading",
               "name": "t:names.title",
@@ -84,15 +104,20 @@
               },
               "blocks": {}
             },
-            "image": {
-              "type": "_blog-post-image",
+            "content": {
+              "type": "_blog-post-description",
               "static": true,
               "settings": {
-                "height": "large",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 4
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 16,
+                "padding-block-end": 0
               },
               "blocks": {}
             }
@@ -111,6 +136,7 @@
     }
   },
   "order": [
+    "section_new_arrivals_TYrUtW",
     "main"
   ]
 }
