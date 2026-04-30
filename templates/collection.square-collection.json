@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "section_new_arrivals_yXCKQC": {
+      "type": "section-new-arrivals",
+      "name": "t:content.new_arrivals_presets.banner_1",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "new_arrivals_headline": "New Arrivals"
+      }
+    },
     "section": {
       "type": "section",
       "blocks": {
@@ -145,6 +153,7 @@
               "type": "_product-card-gallery",
               "settings": {
                 "image_ratio": "square",
+                "media_fit": "contain",
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -312,14 +321,6 @@
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 72
-      }
-    },
-    "section_new_arrivals_yXCKQC": {
-      "type": "section-new-arrivals",
-      "name": "t:content.new_arrivals_presets.banner_1",
-      "settings": {
-        "color_scheme": "scheme-3",
-        "new_arrivals_headline": "New Arrivals"
       }
     }
   },
