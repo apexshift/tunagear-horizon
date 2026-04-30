@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "section_new_arrivals_aUrW9D": {
+      "type": "section-new-arrivals",
+      "name": "t:content.new_arrivals_presets.banner_1",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "new_arrivals_headline": "New Arrivals"
+      }
+    },
     "section": {
       "type": "section",
       "blocks": {
@@ -316,6 +324,7 @@
     }
   },
   "order": [
+    "section_new_arrivals_aUrW9D",
     "section",
     "main"
   ]
