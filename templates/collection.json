@@ -153,6 +153,7 @@
               "type": "_product-card-gallery",
               "settings": {
                 "image_ratio": "portrait",
+                "media_fit": "contain",
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
