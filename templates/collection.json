@@ -199,7 +199,7 @@
               "type": "_product-card-group",
               "name": "Bottom",
               "settings": {
-                "content_direction": "row",
+                "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "space-between",
                 "vertical_alignment": "flex-end",
@@ -228,7 +228,7 @@
                 "gradient_direction": "to top",
                 "link": "",
                 "open_in_new_tab": false,
-                "padding-block-start": 12,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
