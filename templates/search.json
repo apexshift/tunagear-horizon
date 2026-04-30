@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "section_new_arrivals_DRmFHP": {
+      "type": "section-new-arrivals",
+      "name": "t:content.new_arrivals_presets.banner_1",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "new_arrivals_headline": "New Arrivals"
+      }
+    },
     "search": {
       "type": "search-header",
       "blocks": {
@@ -102,6 +110,7 @@
               "name": "t:names.product_card_media",
               "settings": {
                 "image_ratio": "portrait",
+                "media_fit": "cover",
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -188,6 +197,7 @@
     }
   },
   "order": [
+    "section_new_arrivals_DRmFHP",
     "search",
     "main"
   ]
