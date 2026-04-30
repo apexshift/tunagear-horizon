@@ -217,7 +217,7 @@
               },
               "blocks": {}
             },
-            "text_kRrmgk": {
+            "text_tjiMrb": {
               "type": "text",
               "name": "Vendor",
               "settings": {
@@ -236,7 +236,7 @@
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 0,
+                "padding-block-start": 12,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -249,7 +249,7 @@
             "product_title_4nY4eT",
             "price_EzJzMm",
             "swatches",
-            "text_kRrmgk"
+            "text_tjiMrb"
           ]
         }
       },
