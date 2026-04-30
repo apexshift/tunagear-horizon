@@ -1,5 +1,22 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "section_new_arrivals_baxcdD": {
+      "type": "section-new-arrivals",
+      "name": "t:content.new_arrivals_presets.banner_1",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "new_arrivals_headline": "New Arrivals"
+      }
+    },
     "main": {
       "type": "main-page",
       "blocks": {
@@ -35,7 +52,10 @@
           "blocks": {}
         }
       },
-      "block_order": ["heading", "page-content"],
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -45,5 +65,8 @@
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "section_new_arrivals_baxcdD",
+    "main"
+  ]
 }
