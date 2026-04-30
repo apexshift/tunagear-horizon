@@ -7,8 +7,16 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
+    "section_new_arrivals_8Xxj48": {
+      "type": "section-new-arrivals",
+      "name": "t:content.new_arrivals_presets.banner_1",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "new_arrivals_headline": "New Arrivals"
+      }
+    },
     "cart-section": {
       "type": "main-cart",
       "blocks": {
@@ -170,6 +178,7 @@
               "name": "t:names.product_card_media",
               "settings": {
                 "image_ratio": "adapt",
+                "media_fit": "cover",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -260,6 +269,7 @@
     }
   },
   "order": [
+    "section_new_arrivals_8Xxj48",
     "cart-section",
     "product_list_NNFgcy"
   ]
