@@ -189,7 +189,8 @@
           "afw-tuna-fishing-gear",
           "bkk-tuna-fishing-gear",
           "delta-fishing",
-          "diamand-tuna-fishing-gear"
+          "diamand-tuna-fishing-gear",
+          "halco-tuna-fishing-gear"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
