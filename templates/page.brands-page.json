@@ -192,7 +192,8 @@
           "diamand-tuna-fishing-gear",
           "halco-tuna-fishing-gear",
           "hogy-lures-tuna-fishing-gear",
-          "howk-tuna-fishing-gear"
+          "howk-tuna-fishing-gear",
+          "madness-tuna-fishing-gear"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
