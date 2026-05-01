@@ -190,7 +190,8 @@
           "bkk-tuna-fishing-gear",
           "delta-fishing",
           "diamand-tuna-fishing-gear",
-          "halco-tuna-fishing-gear"
+          "halco-tuna-fishing-gear",
+          "hogy-lures-tuna-fishing-gear"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
