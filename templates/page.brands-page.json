@@ -216,7 +216,10 @@
       "settings": {
         "collection_list": [
           "aftco-tuna-fishing-gear",
-          "bkk-hooks-for-tuna-fishing"
+          "afw-tuna-fishing-gear",
+          "bkk-tuna-fishing-gear",
+          "delta-fishing",
+          "diamand-tuna-fishing-gear"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
