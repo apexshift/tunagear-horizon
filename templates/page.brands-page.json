@@ -197,7 +197,8 @@
           "maria-tuna-fishing-gear",
           "momoi-tuna-fishing-gear",
           "ocean-legacy-tuna-fishing-gear",
-          "pratiko-tuna-fishing-gear"
+          "pratiko-tuna-fishing-gear",
+          "quick-rig-tuna-fishing-gear"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
