@@ -129,7 +129,7 @@
             "show_swatch_label": false,
             "show_filter_label": false,
             "enable_sorting": true,
-            "enable_grid_density": true,
+            "enable_grid_density": false,
             "inherit_color_scheme": false,
             "color_scheme": "scheme-4",
             "padding-block-start": 8,
