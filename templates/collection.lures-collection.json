@@ -162,7 +162,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h2>Lure Collections</h2>",
+                "text": "<h2>Shop by Lure Type</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -266,7 +266,11 @@
       ],
       "name": "t:names.collections_grid",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "soft-plastic-tuna-fishing-lures",
+          "hard-plastic-tuna-fishing-lures",
+          "tuna-fishing-poppers"
+        ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 3,
