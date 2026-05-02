@@ -219,7 +219,7 @@
         "rows_gap": 24,
         "max_collections": 4,
         "icons_style": "arrow",
-        "icons_shape": "none",
+        "icons_shape": "circle",
         "section_width": "page-width",
         "gap": 12,
         "color_scheme": "",
