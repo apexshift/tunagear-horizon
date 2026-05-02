@@ -85,10 +85,19 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "breadcrumb_pEiTQr": {
+              "type": "breadcrumb",
+              "name": "t:names.breadcrumb",
+              "settings": {
+                "separator": "/"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "text_fRMQMR"
+            "text_fRMQMR",
+            "breadcrumb_pEiTQr"
           ]
         },
         "static-collection-card": {
@@ -96,6 +105,7 @@
           "name": "t:names.collection_card",
           "static": true,
           "settings": {
+            "show_collection_title": true,
             "placement": "below_image",
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
