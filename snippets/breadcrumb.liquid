@@ -1,0 +1,168 @@
+{% doc %}
+  Renders a dynamic breadcrumb navigation trail based on the current page template.
+  Supports product, collection, article, blog, page, search, and cart templates.
+  Outputs JSON-LD structured data for SEO.
+
+  @param {string} [separator] - The separator character between breadcrumb items (default: "/")
+
+  @example
+  {% render 'breadcrumb', separator: '/' %}
+{% enddoc %}
+
+{%- unless template.name == 'index' or template.name == 'password' -%}
+  {%- liquid
+    assign separator = separator | default: '/'
+    assign crumb_2_title = nil
+    assign crumb_2_url = nil
+    assign crumb_3_title = nil
+    assign crumb_3_url = nil
+
+    case template.name
+      when 'collection'
+        assign crumb_2_title = collection.title
+        assign crumb_2_url = collection.url
+      when 'product'
+        if collection
+          assign crumb_2_title = collection.title
+          assign crumb_2_url = collection.url
+          assign crumb_3_title = product.title
+          assign crumb_3_url = product.url
+        elsif product.collections.size > 0
+          assign crumb_2_title = product.collections.first.title
+          assign crumb_2_url = product.collections.first.url
+          assign crumb_3_title = product.title
+          assign crumb_3_url = product.url
+        else
+          assign crumb_2_title = product.title
+          assign crumb_2_url = product.url
+        endif
+      when 'article'
+        assign crumb_2_title = blog.title
+        assign crumb_2_url = blog.url
+        assign crumb_3_title = article.title
+        assign crumb_3_url = article.url
+      when 'blog'
+        assign crumb_2_title = blog.title
+        assign crumb_2_url = blog.url
+      when 'page'
+        assign crumb_2_title = page.title
+        assign crumb_2_url = page.url
+      when 'search'
+        assign crumb_2_title = 'blocks.breadcrumb.search_results' | t
+      when 'cart'
+        assign crumb_2_title = 'content.cart_title' | t
+      when '404'
+        assign crumb_2_title = '404'
+    endcase
+  -%}
+
+  <nav class="breadcrumb" aria-label="{{ 'blocks.breadcrumb.nav_label' | t }}">
+    <ol class="breadcrumb__list" role="list">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link breadcrumb__home" href="{{ routes.root_url }}" aria-label="{{ 'blocks.breadcrumb.home' | t }}">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M4 11V21H20V11L12 3L4 11Z" stroke="currentColor"></path>
+            <path d="M9.5 21V13H14.5V21" stroke="currentColor"></path>
+          </svg>
+        </a>
+      </li>
+
+      {%- if crumb_2_title -%}
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__separator" aria-hidden="true">{{ separator }}</span>
+          {%- if crumb_3_title -%}
+            <a class="breadcrumb__link" href="{{ crumb_2_url }}">{{ crumb_2_title }}</a>
+          {%- else -%}
+            <span class="breadcrumb__current" aria-current="page">{{ crumb_2_title }}</span>
+          {%- endif -%}
+        </li>
+      {%- endif -%}
+
+      {%- if crumb_3_title -%}
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__separator" aria-hidden="true">{{ separator }}</span>
+          <span class="breadcrumb__current" aria-current="page">{{ crumb_3_title }}</span>
+        </li>
+      {%- endif -%}
+    </ol>
+  </nav>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": {{ 'blocks.breadcrumb.home' | t | json }},
+          "item": {{ shop.url | append: routes.root_url | json }}
+        }
+        {%- if crumb_2_title -%}
+        ,{
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ crumb_2_title | json }}
+          {%- if crumb_2_url -%}
+          ,"item": {{ shop.url | append: crumb_2_url | json }}
+          {%- endif -%}
+        }
+        {%- endif -%}
+        {%- if crumb_3_title -%}
+        ,{
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ crumb_3_title | json }},
+          "item": {{ shop.url | append: crumb_3_url | json }}
+        }
+        {%- endif -%}
+      ]
+    }
+  </script>
+
+{% stylesheet %}
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size--sm, 0.875rem);
+  }
+
+  .breadcrumb__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumb__separator {
+    padding-inline: 0.5em;
+    opacity: 0.5;
+    user-select: none;
+  }
+
+  .breadcrumb__link {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: 0.2em;
+  }
+
+  .breadcrumb__link:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb__home {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumb__home svg {
+    display: block;
+  }
+
+  .breadcrumb__current {
+    opacity: 0.6;
+  }
+{% endstylesheet %}
+{%- endunless -%}

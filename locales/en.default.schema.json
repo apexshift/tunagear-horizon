@@ -269,6 +269,7 @@
     "blog_posts_carousel": "Blog posts: Carousel",
     "blog_posts_editorial": "Blog posts: Editorial",
     "borders": "Borders",
+    "breadcrumb": "Breadcrumb",
     "button": "Button",
     "buttons": "Buttons",
     "caption": "Caption",
@@ -1116,6 +1117,7 @@
     "show_swatch_label": "Text labels for swatches",
     "show_collection_title": "Show collection title",
     "show_tax_info": "Tax information",
+    "separator": "Separator",
     // Font size or element dimensions setting
     "size": "Size",
     "skus": "SKUs",

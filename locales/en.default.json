@@ -124,6 +124,11 @@
       "placeholder": "Email address",
       "success": "Thanks for subscribing!"
     },
+    "breadcrumb": {
+      "nav_label": "Breadcrumb navigation",
+      "home": "Home",
+      "search_results": "Search results"
+    },
     "filter": "Filter",
     "load_video": "Load video: {{ description }}",
     "sold_out": "Sold out",

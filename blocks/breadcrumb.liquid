@@ -1,0 +1,22 @@
+{% render 'breadcrumb', separator: block.settings.separator %}
+
+{% schema %}
+{
+  "name": "t:names.breadcrumb",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "t:settings.separator",
+      "default": "/"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.breadcrumb",
+      "category": "t:categories.layout"
+    }
+  ]
+}
+{% endschema %}
