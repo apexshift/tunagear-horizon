@@ -1002,6 +1002,7 @@
     "padding": "Padding",
     "padding_bottom": "Padding bottom",
     "padding_horizontal": "Padding horizontal",
+    "padding_individual": "Set each side individually",
     "padding_top": "Padding top",
     "page": "Page",
     "page_transition_enabled": "Page transition",
@@ -1110,6 +1111,7 @@
     "show_search": "Show search",
     "show_second_image_on_hover": "Show second image on hover",
     "show_swatch_label": "Text labels for swatches",
+    "show_collection_title": "Show collection title",
     "show_tax_info": "Tax information",
     // Font size or element dimensions setting
     "size": "Size",

@@ -9,7 +9,7 @@
 {% endcapture %}
 
 {% capture children %}
-  {% content_for 'blocks', closest.collection: collection %}
+  {% content_for 'blocks', closest.collection: collection, closest.show_collection_title: block.settings.show_collection_title %}
 {% endcapture %}
 
 {% render 'collection-card',
@@ -49,6 +49,12 @@
     {
       "type": "header",
       "content": "t:content.text"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_title",
+      "label": "t:settings.show_collection_title",
+      "default": true
     },
     {
       "type": "select",
