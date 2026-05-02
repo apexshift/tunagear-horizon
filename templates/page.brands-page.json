@@ -185,6 +185,7 @@
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
+          "tuna-gear-1",
           "aftco-tuna-fishing-gear",
           "afw-tuna-fishing-gear",
           "bkk-tuna-fishing-gear",
