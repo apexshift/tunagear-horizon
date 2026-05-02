@@ -71,11 +71,20 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "breadcrumb_edxa4d": {
+          "type": "breadcrumb",
+          "name": "t:names.breadcrumb",
+          "settings": {
+            "separator": "/"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "text_tqQTNE",
-        "text_twGGkJ"
+        "text_twGGkJ",
+        "breadcrumb_edxa4d"
       ],
       "name": "Collection heading",
       "settings": {
@@ -161,7 +170,10 @@
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-end": 0,
+                "badge_new_arrival_color_scheme": "",
+                "low_stock_threshold": 10,
+                "badge_low_stock_color_scheme": ""
               },
               "blocks": {}
             },
