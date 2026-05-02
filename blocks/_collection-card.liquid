@@ -9,8 +9,14 @@
 {% endcapture %}
 
 {% capture children %}
-  {% content_for 'blocks', closest.collection: collection, closest.show_collection_title: block.settings.show_collection_title %}
+  {% content_for 'blocks', closest.collection: collection %}
 {% endcapture %}
+
+{% style %}
+  [data-block-id="{{ block.id }}"] .collection-title-block {
+    display: {% if block.settings.show_collection_title %}contents{% else %}none{% endif %};
+  }
+{% endstyle %}
 
 {% render 'collection-card',
   card_image: card_image,
