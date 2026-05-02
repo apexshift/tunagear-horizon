@@ -69,7 +69,8 @@
           "value": "below_image",
           "label": "t:options.below_image"
         }
-      ]
+      ],
+      "visible_if": "{{ block.settings.show_collection_title == true }}"
     },
     {
       "type": "select",
@@ -89,7 +90,8 @@
           "label": "t:options.right"
         }
       ],
-      "default": "flex-start"
+      "default": "flex-start",
+      "visible_if": "{{ block.settings.show_collection_title == true }}"
     },
     {
       "type": "select",
@@ -120,7 +122,8 @@
       "max": 50,
       "step": 1,
       "unit": "px",
-      "default": 8
+      "default": 8,
+      "visible_if": "{{ block.settings.show_collection_title == true }}"
     },
     {
       "type": "header",
