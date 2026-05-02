@@ -113,6 +113,7 @@
           "name": "t:names.collection_card",
           "static": true,
           "settings": {
+            "show_collection_title": false,
             "placement": "below_image",
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
@@ -123,12 +124,12 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 8,
-            "padding_individual": false,
+            "padding_individual": true,
             "padding_all": 8,
-            "padding-block-start": 0,
+            "padding-block-start": 8,
             "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-inline-start": 8,
+            "padding-inline-end": 8
           },
           "blocks": {
             "collection_title_Xi4hy8": {
