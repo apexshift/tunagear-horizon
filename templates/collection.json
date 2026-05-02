@@ -17,50 +17,6 @@
         "new_arrivals_headline": "New Arrivals"
       }
     },
-    "section_ii9kyP": {
-      "type": "section",
-      "blocks": {
-        "breadcrumb_MTemNR": {
-          "type": "breadcrumb",
-          "name": "t:names.breadcrumb",
-          "settings": {
-            "separator": "/"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "breadcrumb_MTemNR"
-      ],
-      "name": "Breadcrumb Wrapper",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-5",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 12,
-        "padding-block-end": 12
-      }
-    },
     "section": {
       "type": "section",
       "blocks": {
@@ -115,11 +71,20 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "breadcrumb_maLDw8": {
+          "type": "breadcrumb",
+          "name": "t:names.breadcrumb",
+          "settings": {
+            "separator": "/"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "text_tqQTNE",
-        "text_twGGkJ"
+        "text_twGGkJ",
+        "breadcrumb_maLDw8"
       ],
       "name": "Collection heading",
       "settings": {
@@ -373,7 +338,6 @@
   },
   "order": [
     "section_new_arrivals_E8KR7q",
-    "section_ii9kyP",
     "section",
     "main"
   ]
