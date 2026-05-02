@@ -20,6 +20,14 @@
     "main": {
       "type": "main-page",
       "blocks": {
+        "breadcrumb_yA6BzM": {
+          "type": "breadcrumb",
+          "name": "t:names.breadcrumb",
+          "settings": {
+            "separator": "/"
+          },
+          "blocks": {}
+        },
         "title": {
           "type": "text",
           "name": "t:names.title",
@@ -74,6 +82,7 @@
         }
       },
       "block_order": [
+        "breadcrumb_yA6BzM",
         "title",
         "content"
       ],
