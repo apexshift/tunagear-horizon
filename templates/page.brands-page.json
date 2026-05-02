@@ -204,7 +204,8 @@
           "salta-lures-tuna-fishing-gear",
           "shimano-tuna-fishing-gear-1",
           "tackle-house-tuna-fishing-gear",
-          "wolfpack-tackle-tuna-fishing-gear"
+          "wolfpack-tackle-tuna-fishing-gear",
+          "x-braid-tuna-fishing-gear"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
