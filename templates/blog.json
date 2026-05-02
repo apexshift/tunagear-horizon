@@ -46,6 +46,14 @@
           },
           "blocks": {}
         },
+        "breadcrumb_tgG9cU": {
+          "type": "breadcrumb",
+          "name": "t:names.breadcrumb",
+          "settings": {
+            "separator": "/"
+          },
+          "blocks": {}
+        },
         "static-blog-post-card": {
           "type": "_blog-post-card",
           "static": true,
@@ -126,7 +134,8 @@
         }
       },
       "block_order": [
-        "title"
+        "title",
+        "breadcrumb_tgG9cU"
       ],
       "settings": {
         "color_scheme": "",
