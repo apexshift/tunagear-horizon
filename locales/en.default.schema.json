@@ -103,6 +103,7 @@
     "mobile_layout": "Mobile layout",
     "mobile_size": "Mobile size",
     "mobile_width": "Mobile width",
+    "new_arrival_badge": "New arrival badge",
     "new_arrivals": "New arrivals",
     "new_arrivals_presets": {
       "banner_1": "New arrivals banner 1"
@@ -790,6 +791,7 @@
     // Color scheme setting for sale badges on product cards
     "badge_sale_color_scheme": "Sale",
     "badge_sold_out_color_scheme": "Sold out",
+    "badge_new_arrival_color_scheme": "New arrival",
     // Display type selection for popup content (modal vs drawer)
     "behavior": "Behavior",
     "blog": "Blog",

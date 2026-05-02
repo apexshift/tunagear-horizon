@@ -23,6 +23,11 @@
           {%- endif -%}
         </div>
       {%- endif -%}
+      {%- if product.tags contains 'new-arrival' -%}
+        <div class="product-badges__badge product-badges__badge--rectangle color-{{ block.settings.badge_new_arrival_color_scheme }}">
+          {{ 'content.product_badge_new_arrival' | t }}
+        </div>
+      {%- endif -%}
     </div>
     {%  if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add', product: product, section_id: section.id %}
@@ -231,6 +236,16 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "t:content.new_arrival_badge"
+    },
+    {
+      "type": "color_scheme",
+      "id": "badge_new_arrival_color_scheme",
+      "label": "t:settings.badge_new_arrival_color_scheme",
+      "default": "scheme-new-arrival"
     }
   ],
   "presets": [
