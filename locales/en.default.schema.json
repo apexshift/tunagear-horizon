@@ -103,6 +103,7 @@
     "mobile_layout": "Mobile layout",
     "mobile_size": "Mobile size",
     "mobile_width": "Mobile width",
+    "low_stock_badge": "Low stock badge",
     "new_arrival_badge": "New arrival badge",
     "new_arrivals": "New arrivals",
     "new_arrivals_presets": {
@@ -791,7 +792,9 @@
     // Color scheme setting for sale badges on product cards
     "badge_sale_color_scheme": "Sale",
     "badge_sold_out_color_scheme": "Sold out",
+    "badge_low_stock_color_scheme": "Low stock",
     "badge_new_arrival_color_scheme": "New arrival",
+    "low_stock_threshold": "Show when stock is at or below",
     // Display type selection for popup content (modal vs drawer)
     "behavior": "Behavior",
     "blog": "Blog",
