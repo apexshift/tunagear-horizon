@@ -125,6 +125,14 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "breadcrumb_ex9gtT": {
+                  "type": "breadcrumb",
+                  "name": "t:names.breadcrumb",
+                  "settings": {
+                    "separator": "/"
+                  },
+                  "blocks": {}
+                },
                 "text_xpVMaM": {
                   "type": "text",
                   "name": "t:names.title",
@@ -175,6 +183,7 @@
                 }
               },
               "block_order": [
+                "breadcrumb_ex9gtT",
                 "text_xpVMaM",
                 "price_tVjtKg"
               ]
